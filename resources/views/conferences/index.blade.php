@@ -43,7 +43,11 @@
                                 </a>
 
                                 <form action="{{ route('conferences.destroy', $conference) }}"
-                                      method="POST">
+                                      method="POST"
+                                      class="delete-form"
+                                      data-title="{{ __('messages.confirm_delete') }}"
+                                      data-confirm="{{ __('messages.confirm') }}"
+                                      data-cancel="{{ __('messages.cancel') }}">
                                     @csrf
                                     @method('DELETE')
 

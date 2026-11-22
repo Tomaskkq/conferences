@@ -35,7 +35,7 @@ class ConferenceController extends Controller
 
         Conference::create($validated);
 
-        return redirect()->route('conferences.index');
+        return redirect()->route('conferences.index')->with('success', __('messages.success'));
     }
 
     public function edit(Conference $conference)
@@ -54,13 +54,13 @@ class ConferenceController extends Controller
 
         $conference->update($validated);
 
-        return redirect()->route('conferences.index');
+        return redirect()->route('conferences.index')->with('success', __('messages.success'));
     }
 
     public function destroy(Conference $conference)
     {
         $conference->delete();
 
-        return redirect()->route('conferences.index');
+        return redirect()->route('conferences.index')->with('success', __('messages.success'));
     }
 }

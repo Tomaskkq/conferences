@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
+@if (session('success'))
+    <script>
+        window.successTitle = @json(__('messages.success'));
+        window.successMessage = @json(session('success'));
+    </script>
+@endif
+<script src="{{ mix('js/app.js') }}"></script>
 <body class="bg-light">
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">

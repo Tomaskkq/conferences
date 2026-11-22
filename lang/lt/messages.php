@@ -18,4 +18,7 @@ return [
     'address' => 'Adresas',
     'actions' => 'Veiksmai',
     'cancel' => 'Atšaukti',
+    'success' => 'Veiksmas įvykdytas',
+    'confirm_delete' => 'Ar tikrai norite ištrinti?',
+    'confirm' => 'Taip',
 ];

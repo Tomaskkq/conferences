@@ -18,4 +18,7 @@ return [
     'address' => 'Address',
     'actions' => 'Actions',
     'cancel' => 'Cancel',
+    'success' => 'Action completed',
+    'confirm_delete' => 'Are you sure you want to delete?',
+    'confirm' => 'Yes',
 ];
