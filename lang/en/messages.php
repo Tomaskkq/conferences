@@ -16,4 +16,6 @@ return [
     'description' => 'Description',
     'date' => 'Date',
     'address' => 'Address',
+    'actions' => 'Actions',
+    'cancel' => 'Cancel',
 ];

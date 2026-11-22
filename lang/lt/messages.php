@@ -16,4 +16,6 @@ return [
     'description' => 'Aprašymas',
     'date' => 'Data',
     'address' => 'Adresas',
+    'actions' => 'Veiksmai',
+    'cancel' => 'Atšaukti',
 ];
